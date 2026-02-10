@@ -1,0 +1,24 @@
+node_modules/
+.expo/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac
+.DS_Store
+
+# Android
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx
+.externalNativeBuild
+
+# iOS
+*.xcworkspace
+xcuserdata
+DerivedData
+Pods
+build

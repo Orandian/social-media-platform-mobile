@@ -1,0 +1,14 @@
+fragment UserAvatarFields on User {
+  id
+  username
+  avatarUrl
+  displayName
+}
+
+fragment ImageMetadataFields on Image {
+  id
+  url
+  width
+  height
+  aspectRatio
+}
