@@ -7,7 +7,7 @@ import { setContext } from "@apollo/client/link/context";
  */
 
 const httpLink = createHttpLink({
-  uri: "YOUR_GRAPHQL_ENDPOINT", // Move to .env for production
+  uri: "https://social-media-platform-server-production.up.railway.app/graphql",
 });
 
 const authLink = setContext(async (_, { headers }) => {

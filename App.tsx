@@ -3,15 +3,13 @@ import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import { client } from "./src/services/apollo";
+import { FeedScreen } from "./src/screens/Feed/FeedScreen";
 
 export default function App() {
   return (
     <ApolloProvider client={client}>
-      <View style={styles.container}>
-        <Text>Social Media</Text>
-        <Text>GraphQL + Apollo Client + Expo</Text>
-        <StatusBar style="auto" />
-      </View>
+      <FeedScreen />
+      <StatusBar style="auto" />
     </ApolloProvider>
   );
 }
