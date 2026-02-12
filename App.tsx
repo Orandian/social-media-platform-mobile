@@ -8,7 +8,7 @@ export default function App() {
   return (
     <ApolloProvider client={client}>
       <View style={styles.container}>
-        <Text>Social Media Platform Boilerplate</Text>
+        <Text>Social Media</Text>
         <Text>GraphQL + Apollo Client + Expo</Text>
         <StatusBar style="auto" />
       </View>
