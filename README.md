@@ -1,94 +1,50 @@
-# Social Media Platform Mobile
+# Welcome to your Expo app 👋
 
-A React Native mobile app built with Expo, Apollo Client, and GraphQL for a social media platform.
+This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Tech Stack
+## Get started
 
-- **Framework**: React Native 0.74 + Expo SDK 51
-- **Language**: TypeScript
-- **API**: GraphQL with Apollo Client
-- **State Management**: Apollo Cache with custom type policies
+1. Install dependencies
 
-## Project Structure
-
-```
-src/
-├── components/         # Shared UI components
-│   └── ui/
-├── features/           # Feature-based modules
-│   ├── Auth/           # Authentication (login, register)
-│   ├── Comments/       # Comment functionality
-│   ├── Feed/           # Main feed
-│   ├── Follows/        # Follow/unfollow users
-│   ├── Likes/          # Like/unlike posts
-│   ├── Notifications/  # Push notifications
-│   ├── Posts/          # Post CRUD operations
-│   └── Profile/        # User profiles
-├── graphql/            # Shared GraphQL fragments
-├── screens/            # Screen components
-│   ├── Auth/
-│   ├── Feed/
-│   ├── Post/
-│   └── Profile/
-├── services/           # Apollo client setup
-├── store/              # Global state (if needed)
-├── types/              # TypeScript interfaces
-└── utils/              # Helper functions
-```
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+
-- npm or yarn
-- Expo CLI (`npm install -g expo-cli`)
-- iOS Simulator (Mac) or Android Emulator
-
-### Installation
-
-```bash
-# Install dependencies
-npm install
-
-# Start the development server
-npm start
-```
-
-### Running the App
-
-```bash
-# iOS
-npm run ios
-
-# Android
-npm run android
-
-# Web
-npm run web
-```
-
-## Configuration
-
-1. Update the GraphQL endpoint in `src/services/apollo.ts`:
-   ```typescript
-   const httpLink = createHttpLink({
-     uri: "YOUR_GRAPHQL_ENDPOINT",
-   });
+   ```bash
+   npm install
    ```
 
-2. Configure authentication token retrieval in the same file.
+2. Start the app
 
-## Features
+   ```bash
+   npx expo start
+   ```
 
-Each feature module follows a consistent structure:
-- `components/` - Feature-specific UI components
-- `graphql/` - Queries, mutations, and fragments
-- `hooks/` - Custom React hooks
+In the output, you'll find options to open the app in a
 
-## Path Aliases
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-The project uses `@/*` as a path alias for `src/*`:
-```typescript
-import { User } from "@/types";
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+
+## Get a fresh project
+
+When you're ready, run:
+
+```bash
+npm run reset-project
 ```
+
+This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+
+## Learn more
+
+To learn more about developing your project with Expo, look at the following resources:
+
+- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
+- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+
+## Join the community
+
+Join our community of developers creating universal apps.
+
+- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
+- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
